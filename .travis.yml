@@ -1,0 +1,20 @@
+language: node_js
+
+node_js: '8'
+
+cache: yarn
+
+addons:
+  sonarcloud:
+    organization: "robijndm-github"
+    token:
+      secure: "EyIbt96IiREBcGxSUBQMK+8KxEam9giHwJ4RMzJ9xXmaEr+UHseCnFMexE9Qfas7iVtOuajwH/+P5Yal4M6/1FYpvr7s/gRC9+8x6/EyUzh79F1KiTPyyVbVUBEfU6VqTRnDBYxkVqauJ1Dfp55M4UzwbyjvSIQiMKng7ez6s4E30vKqjg+x5P2Ml46/wLXEedyMmNg9A8AEsmxJsNPMt02vEelEjQg04q0tvLfDF03P52C9ClsScofGyGdn6ICydrcVUDY/SEfDapmfQNdKSblV4e8tEGgxDk0EHgUKAqRVDW77BgDeLwczYXZ5FwrFwLHmJAd24/2pkyiX96XaBeByq42T4HWxoe5ElfswacrtxAGtXW+nuOCklK2ucyc5wrqkucWQJLO2zk8tvQF4vFL4z4F9m2QRLIU4qq25wp4jZ51P/6Jiwa71Fp8WCTi+aypkYO+iBEiRHkp/Hh1RwmRIEYXa7S1ExH9ETyBKR6m5Qr1dc/sslnKMlRCJXdj7khZq2SSTtw/tjgpDLtPMV5bg+q6zRGlBt6T+jc96d/zeKJ3JRO867R1tR/5tg78GlutJOpfGzqNU3f3kVdNMlZVvWnDhf287eC933UVl6+5Sp4N0f7XPmp0BZp9VTIld5a9w1HoMxY//wc5cs1Kq3x8Jjw3bp4SPie8Vf1gvH10=
+"
+
+install:
+  - yarn install
+
+script:
+  - yarn build
+  - sonar-scanner
+

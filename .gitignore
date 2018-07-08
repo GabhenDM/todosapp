@@ -1,4 +1,3 @@
-.travis.yml
-sonar-project.properties
+
 travis.log
 test.sh
