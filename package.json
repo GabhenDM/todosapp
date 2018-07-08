@@ -9,8 +9,12 @@
   "author": "Gabriel Henriques",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongoose": "^5.2.1",
     "nodemon": "^1.17.5"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
   }
 }
