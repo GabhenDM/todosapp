@@ -2,15 +2,11 @@ language: node_js
 
 node_js: '8'
 
-cache: yarn
-
 addons:
   sonarcloud:
     organization: "robijndm-github"
 
-install:
-  - yarn install
 
 script:
-  - sonar-scanner
+  - sonar-scanner   -Dsonar.projectKey=todosapp   -Dsonar.organization=robijndm-github   -Dsonar.sources=.   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=56358fe754c7e5a3967111d22b0805d17c877a43
 
