@@ -1,0 +1,7 @@
+organization=robijndm-github
+projectKey=todosapp
+serverUrl=https://sonarcloud.io
+serverVersion=7.3.0.14089
+dashboardUrl=https://sonarcloud.io/dashboard?id=todosapp
+ceTaskId=AWR32yH4SVw5l4-qjIfi
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWR32yH4SVw5l4-qjIfi
